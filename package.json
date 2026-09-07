@@ -2,8 +2,9 @@
   "name": "ayur-veda-mantra",
   "version": "1.0.0",
   "description": "Authentic Ayurvedic Treatment & Panchakarma Centre Website",
-  "main": "server.js",
+  "private": true,
   "scripts": {
+    "build": "echo 'Static website ready'",
     "start": "node server.js",
     "test": "node test_routes.js"
   },
@@ -14,6 +15,5 @@
     "kerala",
     "health"
   ],
-  "author": "Ayur Veda Mantra",
-  "license": "ISC"
+  "author": "Ayur Veda Mantra"
 }
