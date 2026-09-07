@@ -1605,27 +1605,15 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   CTA BANNER SECTION (HIGH-CONTRAST & CRYSTAL READABILITY)
+   CTA BANNER SECTION (CLEAN ORIGINAL STYLE WITH HIGH-CONTRAST COLORS)
    ========================================================================== */
 .cta-banner-section {
-  background: linear-gradient(135deg, #18130E 0%, #0C3E30 50%, #18130E 100%);
+  background: linear-gradient(135deg, var(--primary-brown-dark) 0%, var(--ayur-green-dark) 100%);
   color: #FFFFFF;
   text-align: center;
-  position: relative;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.cta-banner-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(223, 192, 108, 0.4);
-  backdrop-filter: blur(14px);
-  border-radius: var(--radius-lg);
-  padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem);
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.3);
-}
-
-.cta-banner-card h2 {
+.cta-banner-section h2 {
   color: #FFFFFF !important;
   font-size: clamp(2.2rem, 3.8vw, 3.2rem);
   margin-top: 0.5rem;
@@ -1633,7 +1621,7 @@ textarea.form-control {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-.cta-banner-card p {
+.cta-banner-section p {
   color: #F0F6F3 !important;
   font-size: 1.18rem;
   line-height: 1.75;
@@ -1644,27 +1632,14 @@ textarea.form-control {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.cta-banner-card .tagline {
+.cta-banner-section .tagline-dark {
   color: var(--accent-gold-light);
+  margin-bottom: 1rem;
 }
 
-.cta-banner-card .tagline::before,
-.cta-banner-card .tagline::after {
+.cta-banner-section .tagline-dark::before,
+.cta-banner-section .tagline-dark::after {
   background-color: var(--accent-gold-light);
 }
 
-.cta-banner-btn-secondary {
-  background-color: #FFFFFF !important;
-  color: #0C3E30 !important;
-  font-weight: 700;
-  border-color: #FFFFFF !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.cta-banner-btn-secondary:hover {
-  background-color: var(--bg-warm-light) !important;
-  color: #082A21 !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-}
 
