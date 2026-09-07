@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whatsapp-veda.vercel.app/sitemap.xml

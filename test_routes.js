@@ -22,6 +22,7 @@ const urls = [
   'http://localhost:8080/assets/images/snana_choornam.jpg',
   'http://localhost:8080/assets/images/rasayana.jpg',
   'http://localhost:8080/assets/images/tarpana.jpg',
+  'http://localhost:8080/assets/images/dr-anupama.jpeg',
   'http://localhost:8080/assets/images/pain_care.jpg'
 ];
 
