@@ -1642,4 +1642,357 @@ textarea.form-control {
   background-color: var(--accent-gold-light);
 }
 
+/* ==========================================================================
+   COMPREHENSIVE MOBILE & RESPONSIVE ENHANCEMENTS
+   Breakpoints: 1024px (Tablet Landscape), 768px (Tablet Portrait), 480px (Mobile)
+   ========================================================================== */
+
+/* Touch Target Minimum & Input Zoom Prevention */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  /* Prevent iOS input auto-zoom on focus */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Header & Navigation on Mobile */
+  .site-header {
+    padding: 0.6rem 0;
+  }
+
+  .site-header.scrolled {
+    padding: 0.4rem 0;
+  }
+
+  .brand-logo img {
+    height: 52px;
+  }
+
+  .site-header.scrolled .brand-logo img {
+    height: 44px;
+  }
+
+  .nav-actions .btn {
+    padding: 0.55rem 1.1rem;
+    font-size: 0.82rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    min-height: auto;
+    padding-top: 6.8rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+    padding: 0.35rem 1rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    margin-bottom: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .hero-desc {
+    font-size: 1.02rem;
+    line-height: 1.65;
+    margin-bottom: 1.85rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.95rem 1.5rem;
+    font-size: 0.96rem;
+  }
+
+  .hero-trust-bar {
+    gap: 1.25rem;
+    padding-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .trust-item {
+    gap: 0.75rem;
+  }
+
+  .trust-item-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  /* Inner Page Banners */
+  .page-banner {
+    padding: 6.8rem 0 3rem;
+  }
+
+  .page-banner h1 {
+    font-size: clamp(2rem, 7.5vw, 2.7rem);
+  }
+
+  .page-banner p {
+    font-size: 0.98rem;
+  }
+
+  /* Section Padding & Headings */
+  .section-padding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.25rem;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.85rem, 6.5vw, 2.4rem);
+  }
+
+  /* Doctor Spotlight Mobile */
+  .doctor-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .doctor-image-wrapper {
+    max-width: 340px;
+    margin: 0 auto;
+    border-width: 6px;
+  }
+
+  .doctor-exp-badge {
+    position: static;
+    margin-top: 1rem;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .doctor-quote {
+    font-size: 1.08rem;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+  }
+
+  .doctor-points {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  .doctor-actions-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .doctor-actions-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Treatment Filters Horizontal Scroll on Mobile */
+  .treatment-filters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0.5rem 0.25rem 1rem;
+    margin-bottom: 2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    gap: 0.6rem;
+  }
+
+  .treatment-filters::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .treatment-filters::-webkit-scrollbar-thumb {
+    background: var(--ayur-green-light);
+    border-radius: var(--radius-full);
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+    padding: 0.65rem 1.2rem;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
+  .treatment-category-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .treatment-category-header h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Card Elements Mobile */
+  .card-body {
+    padding: 1.35rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .card-footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Product Cards & Notice Banner */
+  .product-notice-banner {
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .product-notice-banner .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .product-details {
+    padding: 1.35rem;
+  }
+
+  .product-title {
+    font-size: 1.22rem;
+  }
+
+  .product-action-box .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Contact Page Mobile */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-info-panel,
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+
+  .contact-info-panel h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form-card .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* FAQ Accordion Mobile */
+  .faq-header {
+    padding: 1.1rem 1.25rem;
+    font-size: 1.12rem;
+  }
+
+  .faq-content {
+    padding: 0 1.25rem;
+  }
+
+  .faq-item.active .faq-content {
+    padding: 0 1.25rem 1.25rem;
+  }
+
+  /* CTA Banner Mobile */
+  .cta-banner-section .btn {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  /* Footer Mobile */
+  .site-footer {
+    padding: 3.5rem 0 1.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-brand .brand-logo img {
+    height: 56px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}
+
+/* Extra Small Phones (<= 380px) */
+@media (max-width: 380px) {
+  .brand-logo img {
+    height: 44px;
+  }
+
+  .nav-actions .btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.78rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .card-body,
+  .product-details,
+  .contact-info-panel,
+  .contact-form-card {
+    padding: 1.15rem;
+  }
+}
+
+
 
